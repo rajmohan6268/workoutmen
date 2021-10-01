@@ -19,16 +19,137 @@ code {
 .bg{
   background: #171717;
 }
-.jumbo{
-  font-style: normal;
-font-weight: 800;
-font-size: 172px;
-line-height: 170px;
-}
 
 .text-gray{
   color: #EFEDE8A6;
 }
 .bg-red{
   background: #E6533C;
+}
+.bg-organge-light{
+  background: #EF8964;
+}
+.bg-gray-dark{
+  background: #303030;
+}
+.bg-violet{
+  background: #7A29DC;
+}
+.gray-card{
+  background: #323443;
+}
+.gray-card1{
+  background: #232532;
+}
+
+.gray-card4{
+  background: #4F5261;
+}
+@media (min-width: 768px) {
+.jumbo{
+  font-style: normal;
+font-weight: 800;
+font-size: 89px;
+line-height: 85px;
+}
+}
+@media (min-width: 1024px) {
+
+  .jumbo{
+    font-style: normal;
+  font-weight: 800;
+  font-size: 132px;
+  line-height: 130px;
+  }
+
+
+}
+@media (min-width: 1536px) {
+  .jumbo{
+    font-style: normal;
+  font-weight: 800;
+  font-size: 172px;
+  line-height: 170px;
+  }
+}
+
+.hred {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hred:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+ 
+  bottom: 0;
+  left: 0;
+  background-color:#E6533C  ;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hred:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hpurple {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hpurple:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+ 
+  bottom: 0;
+  left: 0;
+  background-color: #7A29DC; 
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hpurple:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hrorange {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hrorange:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+ 
+  bottom: 0;
+  left: 0;
+  background: #EF8964;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hrorange:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn{
+  background: #E6533C;
+}
+.btn:hover{
+  background-color: #7A29DC; 
 }
